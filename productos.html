@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MODIFICABLE: Título de la página -->
+    <title>Ferretería El Maestro - Productos</title>
+    
+    <!-- CSS integrado (mismos colores y estilo que index.html) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004080; /* Color Azul */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffcc00; /* Color Amarillo */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #004080;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+        h2 {
+            text-align: center;
+            color: #004080;
+        }
+        /* Contenedor de las tarjetas en cuadrícula */
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        /* Estilo para las tarjetas simples */
+        .tarjeta {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 260px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .tarjeta h3 {
+            margin: 10px 0 5px 0;
+            color: #004080;
+        }
+        .tarjeta p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 10px 0;
+        }
+        .precio {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- MODIFICABLE: Nombre de la ferretería -->
+        <h1>Ferretería El Maestro</h1>
+        <!-- MODIFICABLE: Eslogan de la ferretería -->
+        <p>Tu solución en construcción y hogar</p>
+    </header>
+
+    <nav>
+        <!-- Mismo menú de navegación -->
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+
+    <main>
+        <h2>Nuestros Productos</h2>
+
+        <section class="catalogo">
+            
+            <!-- Producto 1 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3nUzkSj4rj1beVRrsGIJ_VtVU4y1lPbC5D9R9it7gw&s" alt="Martillo de Galpón">
+                <h3>Martillo de Galpón</h3>
+                <p>Martillo con mango de fibra de vidrio resistente y ergonómico.</p>
+                <div class="precio">S/ 25.00</div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3lzw2_zEBcwc9jkwIO4YZpKgoEtUg_KZwLk1Mx_o_Q&s=10" alt="Taladro Percutor">
+                <h3>Taladro Percutor 650W</h3>
+                <p>Ideal para perforar concreto, madera y metal. Incluye empuñadura.</p>
+                <div class="precio">S/ 180.00</div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://promart.vteximg.com.br/arquivos/ids/8887699-1000-1000/135909.jpg?v=638845947332800000" alt="Pintura Látex">
+                <h3>Pintura Látex Blanco (Balde)</h3>
+                <p>Pintura de alto rendimiento para interiores y exteriores.</p>
+                <div class="precio">S/ 65.00</div>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKa2FvJY8Ev83dkMxGu4IZIBOrZKzrWN2_Zlzo0P1fNN41ot9exzO7cus&s=10" alt="Juego de Desarmadores">
+                <h3>Juego de Desarmadores</h3>
+                <p>Set de 6 piezas imantadas con puntas planas y estrella.</p>
+                <div class="precio">S/ 32.00</div>
+            </article>
+
+            <!-- Producto 5 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfsmhIemL_uzGm-vY79khTwNv93OilrU4MpmAWFCIjVQ&s" alt="Cinta Métrica">
+                <h3>Cinta Métrica 5m</h3>
+                <p>Huincha de medir flexible con freno y carcasa de alto impacto.</p>
+                <div class="precio">S/ 12.00</div>
+            </article>
+
+            <!-- Producto 6 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://carpintec.com.pe/cdn/shop/files/Llave_francesa_10_Truper_1200x1200.jpg?v=1759262498" alt="Llave Ajustable">
+                <h3>Llave Ajustable 10"</h3>
+                <p>Llave francesa de acero cromo vanadio altamente resistente.</p>
+                <div class="precio">S/ 28.00</div>
+            </article>
+
+            <!-- Producto 7 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMFTKgwtp-FYFXzR60zbeMLfqsXTfipJ7pgXm5r-i5og&s=10" alt="Sierra Caladora 750W">
+                <h3>Sierra Caladora 750W"</h3>
+                <p>Herramienta eléctrica ideal para cortes precisos en madera, plástico y metal. Incluye guía paralela.</p>
+                <div class="precio">S/ 145.00</div>
+            </article>
+
+            <!-- Producto 8 -->
+            <article class="tarjeta">
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu propia imagen -->
+                <img src="https://http2.mlstatic.com/D_NQ_NP_855997-MLU79170001359_092024-O.webp" alt="Juego de Alicates 3 Piezas">
+                <h3>Juego de Alicates 3 Piezas"</h3>
+                <p>Set de alicate universal, de corte y de punta en acero al carbono con mango antideslizante.</p>
+                <div class="precio">S/ 42.00</div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- MODIFICABLE: Pie de página -->
+        <p>&copy; 2026 Ferretería El Maestro - Aplao, Arequipa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

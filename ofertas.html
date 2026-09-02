@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MODIFICABLE: Título de la página -->
+    <title>Ferretería El Maestro - Ofertas Especiales</title>
+    
+    <!-- CSS integrado con el mismo diseño -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004080; /* Color Azul */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffcc00; /* Color Amarillo */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #004080;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+        h2 {
+            text-align: center;
+            color: #004080;
+        }
+        .info-local {
+            background-color: #e6e6e6; /* Color Gris */
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .info-local p {
+            margin: 5px 0;
+        }
+        .catalogo-ofertas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tarjeta-oferta {
+            background-color: #ffffff;
+            border: 2px solid #d9534f;
+            border-radius: 5px;
+            width: 260px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .etiqueta-descuento {
+            background-color: #d9534f;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .tarjeta-oferta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .tarjeta-oferta h3 {
+            margin: 10px 0 5px 0;
+            color: #004080;
+        }
+        .tarjeta-oferta p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 10px 0;
+        }
+        .precio-anterior {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+        }
+        .precio-oferta {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- MODIFICABLE: Nombre de la ferretería -->
+        <h1>Ferretería El Maestro</h1>
+        <!-- MODIFICABLE: Eslogan de la ferretería -->
+        <p>Tu solución en construcción y hogar</p>
+    </header>
+
+    <!-- Menú sin target="_blank" para no abrir pestañas nuevas -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <h2>Ofertas Especiales del Mes</h2>
+
+        <!-- Información solicitada: Dirección, Horario, Teléfono y Correo ficticios -->
+        <section class="info-local">
+            <h3>Información para compras en tienda</h3>
+            <!-- MODIFICABLE: Datos ficticios -->
+            <p><strong>Dirección:</strong> Av. San Pedro N° 123, Aplao, Arequipa</p>
+            <p><strong>Horario de atención:</strong> Lunes a Sábado de 7:30 AM a 7:00 PM</p>
+            <p><strong>Teléfono:</strong> +51 987 654 321</p>
+            <p><strong>Correo electrónico:</strong> ventas@ferreteriaelmaestro.com</p>
+        </section>
+
+        <!-- Sección de tarjetas en oferta -->
+        <section class="catalogo-ofertas">
+            
+            <!-- Oferta 1 -->
+            <article class="tarjeta-oferta">
+                <span class="etiqueta-descuento">¡20% OFF!</span>
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu imagen -->
+                <img src="https://via.placeholder.com/260x180?text=Combo+Herramientas" alt="Set de Herramientas">
+                <h3>Set de Herramientas Manuales</h3>
+                <p>Incluye alicate, martillo, llave inglesa y destornilladores.</p>
+                <div class="precio-anterior">Precio normal: S/ 100.00</div>
+                <div class="precio-oferta">Oferta: S/ 80.00</div>
+            </article>
+
+            <!-- Oferta 2 -->
+            <article class="tarjeta-oferta">
+                <span class="etiqueta-descuento">¡15% OFF!</span>
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu imagen -->
+                <img src="https://via.placeholder.com/260x180?text=Pintura+2x1" alt="Balde de Pintura">
+                <h3>Pintura Látex Super Lavable</h3>
+                <p>Balde de 5 galones, máxima cobertura para exteriores.</p>
+                <div class="precio-anterior">Precio normal: S/ 120.00</div>
+                <div class="precio-oferta">Oferta: S/ 102.00</div>
+            </article>
+
+            <!-- Oferta 3 -->
+            <article class="tarjeta-oferta">
+                <span class="etiqueta-descuento">¡OFERTA BAZAR!</span>
+                <!-- MODIFICABLE: Reemplaza 'src' por la URL de tu imagen -->
+                <img src="https://via.placeholder.com/260x180?text=Caja+Organizadora" alt="Caja de Herramientas">
+                <h3>Caja de Herramientas 16"</h3>
+                <p>Caja plástica de alta resistencia con compartimentos superiores.</p>
+                <div class="precio-anterior">Precio normal: S/ 45.00</div>
+                <div class="precio-oferta">Oferta: S/ 32.00</div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- MODIFICABLE: Pie de página -->
+        <p>&copy; 2026 Ferretería El Maestro - Aplao, Arequipa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
